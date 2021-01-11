@@ -3,9 +3,13 @@
 
 # This function returns the factorial of a given number.
 
-def factorial(n):
-    # Write code here
-    pass
 
-# print(factorial(5))
+def factorial(n):
+   if n == 1:
+       return n
+   else:
+       return n*factorial(n-1)
+
+
+print(factorial(5))
 # => 120
